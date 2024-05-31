@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 767px) {
+  main .main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+    margin-top: 20px;
+    background-color: var(--color-main-purple-1);
+  }
+
+  main .main-container .left-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+    height: 100vh;
+  }
+
+  main .left-main-container a {
+    color: #fff;
+    font-size: 35px;
+  }
+
+  main .left-main-container button {
+    font-size: 35px;
+  }
+
+  main .main-container .right-main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #000;
+
+    background-color: var(--color-main-yellow-2);
+  }
+
+  main .main-container .right-main-container .container-1 {
+    display: flex;
+  }
+
+  main .main-container .right-main-container .container-2 {
+    display: grid;
+    place-items: center;
+    width: 30%;
+  }
+
+  main .main-container .right-main-container .container-3 {
+    /* display: grid;
+    place-items: center; */
+    width: 50vw;
+  }
+
+  main .main-container .right-main-container .container-2 img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  main .main-container .right-main-container .container-2 button {
+    width: 100px;
+    height: 30px;
+  }
+
+  main .main-container .right-main-container .btn-change {
+    background-color: #512da8;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-top: 10px;
+    box-shadow: 5px 5px var(--color-main-yellow-1);
+    cursor: pointer;
+  }
+
+  main .form {
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    height: 100%;
+    margin: 20px 0;
+  }
+
+  main .main-container .right-main-container .form input {
+    /* background-color: #eee; */
+    border: none;
+    margin: 8px 0;
+    padding: 10px 15px;
+    font-size: 13px;
+    border-radius: 50px;
+    width: 20rem;
+    outline: none;
+  }
+
+  main .main-container .right-main-container #fName {
+    margin-right: 20px;
+  }
+
+  main .main-container .right-main-container .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+}

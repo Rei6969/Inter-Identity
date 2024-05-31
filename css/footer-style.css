@@ -1,0 +1,82 @@
+/* DESKTOP */
+/* @media screen and (min-width: 767px) { */
+footer .footer-container {
+  min-width: 320px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-main-yellow-2);
+}
+
+footer a {
+  color: #000;
+}
+
+footer .footer-container .left-container {
+  width: 30%;
+  display: table;
+}
+
+footer .footer-container .left-container .left-content {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+footer .footer-container .left-container .left-content img {
+  margin-top: 10px;
+  width: 50%;
+}
+
+footer .footer-container .right-container {
+  width: 70%;
+}
+
+footer .footer-container .right-container .upper-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 10px 30px 10px;
+}
+
+footer .footer-container .right-container .upper-container div {
+  display: block;
+  margin: auto;
+  width: 110px;
+  font-size: 1.5em;
+  margin-top: 0;
+  margin-right: 5px;
+}
+
+footer .footer-container .right-container .lower-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+footer .footer-container .right-container .lower-container .container {
+  display: table;
+  margin: auto;
+}
+
+footer .footer-container .right-container .lower-container .container div {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  margin: auto;
+}
+
+footer .footer-container .right-container .lower-container .container div img {
+  width: 3em;
+}
+/* } */
+
+@media screen and (max-width: 767px) {
+  footer a,
+  footer p,
+  footer h5 {
+    font-size: 0.5em;
+  }
+}
