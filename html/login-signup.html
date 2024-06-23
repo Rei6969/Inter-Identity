@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>interIdentity</title>
+    <link rel="icon" href="./../media/images/logo2.png" type="image/png" />
+    <link rel="stylesheet" href="./../css/root-style.css" />
+    <link rel="stylesheet" href="./../css/loader-style.css" />
+    <link rel="stylesheet" href="./../css/header-style.css" />
+    <link rel="stylesheet" href="./../css/login-signup-style-desktop.css" />
+    <link rel="stylesheet" href="./../css/login-signup-style-mobile.css" />
+
+    <link rel="stylesheet" href="./../css/footer-style.css" />
+  </head>
+
+  <body>
+    <div class="loader"></div>
+
+    <header id="header-container"></header>
+
+    <main>
+      <div class="login-container">
+        <div class="container" id="container">
+          <div class="toggle-container">
+            <div class="toggle">
+              <div class="toggle-panel toggle-left">
+                <img src="./../media/images/logo2.png" alt="logo" />
+                <p>Already have an account?</p>
+                <button class="hidden" id="login">Login</button>
+              </div>
+              <div class="toggle-panel toggle-right">
+                <img src="./../media/images/logo2.png" alt="logo" />
+                <p>Don't have an account yet?</p>
+                <button class="hidden" id="register">Sign Up</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-container sign-up">
+            <div class="form">
+              <h1 style="color: #8c00ff">SIGN UP</h1>
+              <div style="display: flex; width: 100%">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    placeholder="First Name"
+                    style="flex: 1; margin-right: 10px"
+                    id="signup-fName"
+                  />
+                  <label class="form-label">First Name</label>
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="text"
+                    placeholder="Last Name"
+                    style="flex: 1"
+                    id="signup-lName"
+                  />
+                  <label class="form-label">Last Name</label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  style="flex: 1"
+                  id="signup-email"
+                />
+                <label class="form-label">Email</label>
+              </div>
+
+              <div style="display: flex; width: 100%">
+                <div class="form-group">
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    style="flex: 1; margin-right: 10px"
+                    id="signup-pWord"
+                  />
+                  <label class="form-label">Password</label>
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="password"
+                    placeholder="Confirm Password"
+                    style="flex: 1"
+                    id="signup-cpWord"
+                  />
+                  <label class="form-label">Confirm Password</label>
+                </div>
+              </div>
+
+              <div style="display: flex; width: 100%">
+                <div class="form-group">
+                  <input
+                    type="number"
+                    placeholder="Age"
+                    style="flex: 1; margin-right: 10px"
+                    min="0"
+                    id="signup-age"
+                  />
+                  <label class="form-label">Age</label>
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type=""
+                    placeholder="Gender"
+                    style="flex: 1"
+                    id="signup-gender"
+                  />
+                  <label class="form-label">Gender</label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <input
+                  type=""
+                  placeholder="Province"
+                  style="flex: 1"
+                  id="signup-province"
+                />
+                <label class="form-label">Province</label>
+              </div>
+
+              <div class="form-group">
+                <input
+                  type=""
+                  placeholder="Contact No."
+                  style="flex: 1"
+                  id="signup-contact"
+                />
+                <label class="form-label">Contact No.</label>
+              </div>
+              <!-- <input type="date" placeholder="Birthday" /> -->
+              <button style="flex: 1" id="btn-signup">Sign Up</button>
+              <a href="#" class="sign-in-btn" style="margin-top: 60px">
+                Already have an account? Login now
+              </a>
+            </div>
+          </div>
+
+          <div class="form-container sign-in">
+            <div class="form">
+              <h1 style="color: #8c00ff; margin-bottom: 20px">LOGIN</h1>
+
+              <div class="form-group">
+                <input type="email" placeholder="Email" id="loginEmail" />
+                <label class="form-label">Email</label>
+              </div>
+
+              <div class="form-group">
+                <input
+                  type="password"
+                  placeholder="Password"
+                  id="loginPassword"
+                />
+                <label class="form-label">Password</label>
+              </div>
+
+              <a id="btn-forgot-password">Forget Your Password? Reset</a>
+              <button id="btn-login">Login</button>
+              <a href="#" class="sign-up-btn" style="margin-top: 60px">
+                Don't have an account yet? Sign up now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer-container"></footer>
+
+    <script src="./../js/header-script.js"></script>
+    <script src="./../js/loader-script.js"></script>
+    <script src="./../js/login-signup-script.js"></script>
+    <script src="./../js/nav-script.js"></script>
+    <script src="./../js/footer-script.js"></script>
+
+    <script
+      src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.11.1/firebase-database.js"
+      type="module"
+    ></script>
+
+    <script
+      src="./../js/login-signup-firebase-script.js"
+      type="module"
+    ></script>
+
+    <script>
+      document.addEventListener("headerLoaded", () => {
+        const btnNav = document.querySelector(".menu-nav .login-btn");
+        btnNav.style.background = "rgba(0, 0, 0, 0.5)";
+        btnNav.style.color = "white";
+        document.querySelector(".header-nav .login-btn").style.textDecoration =
+          "underline";
+      });
+    </script>
+  </body>
+</html>

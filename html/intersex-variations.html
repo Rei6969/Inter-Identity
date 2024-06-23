@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>interIdentity</title>
+    <link rel="icon" href="./../media/images/logo2.png" type="image/png" />
+    <link rel="stylesheet" href="./../css/root-style.css" />
+    <link rel="stylesheet" href="./../css/loader-style.css" />
+    <link rel="stylesheet" href="./../css/header-style.css" />
+    <link rel="stylesheet" href="./../css/footer-style.css" />
+
+    <link rel="stylesheet" href="./../css/intersex-variations-style.css" />
+  </head>
+  <body>
+    <!-- <div class="loader"></div> -->
+
+    <header id="header-container"></header>
+
+    <footer class="footer-container"></footer>
+
+    <script>
+      const btnAboutNav = document.querySelector(".menu-nav .btn-about");
+      btnAboutNav.style.background = "rgba(0, 0, 0, 0.5)";
+      btnAboutNav.style.color = "white";
+    </script>
+    <script src="./../js/header-script.js"></script>
+    <script src="./../js/loader-script.js"></script>
+    <script src="./../js/nav-script.js"></script>
+    <script src="./../js/footer-script.js"></script>
+
+    <script
+      src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.11.1/firebase-database.js"
+      type="module"
+    ></script>
+
+    <script src="./../js/login-checker-script.js" type="module"></script>
+
+    <script>
+      document.addEventListener("headerLoaded", () => {
+        const btnNav = document.querySelector(".menu-nav .btn-home");
+        btnNav.style.background = "rgba(0, 0, 0, 0.5)";
+        btnNav.style.color = "white";
+        document.querySelector(".header-nav .btn-home").style.textDecoration =
+          "underline";
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>interIdentity</title>
+    <link rel="icon" href="./../media/images/logo2.png" type="image/png" />
+    <link rel="stylesheet" href="./../css/root-style.css" />
+    <link rel="stylesheet" href="./../css/loader-style.css" />
+    <link rel="stylesheet" href="./../css/header-style.css" />
+    <link rel="stylesheet" href="./../css/community-style-desktop.css" />
+    <link rel="stylesheet" href="./../css/community-style-mobile.css" />
+    <link rel="stylesheet" href="./../css/footer-style.css" />
+  </head>
+
+  <body>
+    <div class="loader"></div>
+
+    <header id="header-container"></header>
+
+    <main>
+      <div class="add-container">
+        <div class="add-btn-container">
+          <button class="btn-add-blog"></button>
+          <button class="btn-add-discussion"></button>
+        </div>
+
+        <button class="btn-add"></button>
+      </div>
+
+      <div class="container">
+        <div class="community-nav-container">
+          <a href="#" class="btn-newsfeed">Newsfeed</a>
+          <a href="#" class="btn-blogs">Blogs</a>
+          <a href="#" class="btn-discussion-board">Discussion Board</a>
+        </div>
+
+        <div class="insert-post-container">
+          <div class="insert-post-top">
+            <h3>NEW BLOG</h3>
+            <span class="btn-post-close">&times;</span>
+          </div>
+
+          <div class="insert-post-bottom">
+            <div style="display: flex">
+              <img
+                src="./../media/images/default-profile.png"
+                class="post-user-profile"
+              />
+              <textarea
+                id="inp-insert-post"
+                class="inp-insert-post"
+                placeholder="What's on your mind?"
+                required
+              ></textarea>
+            </div>
+
+            <div class="uploaded-img-container">
+              <input
+                type="file"
+                id=""
+                class="inp-insert-img-post"
+                accept="image/*"
+                multiple
+              />
+              <div class="preview-container"></div>
+            </div>
+
+            <button class="btn-insert-post" type="submit">Post</button>
+          </div>
+        </div>
+
+        <div class="discussion-post-container">
+          <div class="discussion-post-top">
+            <h3>NEW DISCUSSION</h3>
+            <span class="btn-post-close">&times;</span>
+          </div>
+
+          <div class="discussion-post-bottom">
+            <div style="display: flex">
+              <img
+                src="./../media/images/default-profile.png"
+                class="post-user-profile"
+              />
+              <textarea
+                id="inp-discussion-post"
+                class="inp-discussion-post"
+                placeholder="What's on your mind?"
+                required
+              ></textarea>
+            </div>
+
+            <button class="btn-discussion-post" type="submit">Post</button>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <!-- <div class="card-body">
+            <div class="card-left">
+              <div class="card-header">
+                <img src="./../media/images/Nami.png" alt="" />
+                <h3>@Nami</h3>
+              </div>
+
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse
+                dolores officiis amet et reprehenderit perferendis, blanditiis
+                neque totam dolor quos maxime dolore nesciunt explicabo? Quo at
+                consectetur quod quasi mollitia!
+              </p>
+
+              <div class="post-img-container"></div>
+
+              <div class="modal" id="modal">
+                <img class="modal-content" id="modalImage" />
+                <span class="btn-modal-close">&times;</span>
+                <span class="btn-modal-prev">&#10094;</span>
+                <span class="btn-modal-next">&#10095;</span>
+              </div>
+            </div>
+
+            <div class="card-right">
+              <h3 style="text-align: center; margin-top: 0">Comments</h3>
+
+              <div class="comment-container">
+                <img src="./../media/images/luffy.jpg" alt="img" />
+
+                <div class="comment-content">
+                  <h4 class="comment-user-name">Luffy</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dignissimos nobis possimus vel saepe a nam architecto
+                    accusamus suscipit maiores necessitatibus. Perferendis omnis
+                    quam aspernatur, quia amet repudiandae. Dolorem, quo
+                    quibusdam?
+                  </p>
+                </div>
+              </div>
+
+              <div class="card-footer">
+                <textarea
+                  type="text"
+                  id="inp-comment"
+                  class="inp-comment"
+                  placeholder="Add a comment"
+                  maxlength="200"
+                ></textarea>
+                <img
+                  src="./../media/svg/heart-svgrepo-com.svg"
+                  alt="icon"
+                  class="footer-icon"
+                />
+              </div>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="discussion-card-container">
+          <!-- <div class="discussion-top-container">
+            <div class="discussion-header">
+              <img src="./../media/images/brook.jpg" alt="image" />
+
+              <div>
+                <h3>Brook</h3>
+                <p>09-09-0912</p>
+              </div>
+            </div>
+
+            <h1 class="discussion-content">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Recusandae consequatur dolorum corporis accusamus nostrum maiores,
+              alias tenetur, quia molestias id animi consectetur ducimus
+              voluptatibus sint labore dolores reiciendis laudantium
+              repudiandae?
+            </h1>
+          </div>
+
+          <div class="discussion-bottom-container">
+            <div class="discussion-comment-container">
+              <div class="discussion-comment-card">
+                <img src="./../media/images/Nami.png" alt="image" />
+
+                <div class="discussion-comment-content">
+                  <h4 class="discussion-comment-user-name">Nami</h4>
+                  <div style="display: flex; align-items: center">
+                    <p style="margin-right: 10px">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Dignissimos nobis possimus vel saepe a nam architecto
+                      accusamus suscipit maiores necessitatibus. Perferendis
+                      omnis quam aspernatur, quia amet repudiandae. Dolorem, quo
+                      quibusdam?
+                    </p>
+                    <img
+                      src="./../media/icons/icons8-heart-100-white.png"
+                      alt="heart"
+                      style="margin-right: 10px"
+                    />
+                    <img
+                      src="./../media/icons/icons8-left-2-100.png"
+                      alt="reply"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="discussion-reply-card">
+                <img src="./../media/images/luffy.jpg" alt="image" />
+
+                <div class="discussion-reply-content">
+                  <h4 class="discussion-reply-user-name">Luffy</h4>
+                  
+                  <div style="display: flex; align-items: center">
+                    <p style="margin-right: 10px">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Dignissimos nobis possimus vel saepe a nam architecto
+                      accusamus suscipit maiores necessitatibus. Perferendis
+                      omnis quam aspernatur, quia amet repudiandae. Dolorem, quo
+                      quibusdam?
+                    </p>
+                    <img
+                      src="./../media/icons/icons8-heart-100-white.png"
+                      alt="heart"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="discussion-footer">
+              <div>
+                <input
+                  type="text"
+                  class="discussion-inp-comment"
+                  placeholder="Add comment"
+                />
+                <img src="./../media/icons/icons8-send-32.png" alt="send" />
+              </div>
+
+              <div class="discussion-actions">
+                <img
+                  src="./../media/icons/icons8-comment-96.png"
+                  alt="comment"
+                  id="comment-img"
+                />
+                <label for="comment-img">123</label>
+                <img
+                  src="./../media/icons/icons8-heart-50.png"
+                  alt="heart"
+                  id="heart-img"
+                />
+                <label for="heart-img">123</label>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </main>
+
+    <script>
+      // const newPostContainer = document.querySelector(".insert-post-container");
+      // const newDiscussionContainer = document.querySelector(
+      //   ".discussion-post-container"
+      // );
+
+      // const imageInput = document.querySelector(".inp-insert-img-post");
+      // const postContent = document.querySelector(".inp-insert-post");
+
+      // document.querySelector(".btn-add-blog").addEventListener("click", () => {
+      //   newPostContainer.style.display = "block";
+      //   imageInput.value = "";
+      //   postContent.value = "";
+      // });
+
+      // document
+      //   .querySelector(".insert-post-container .btn-post-close")
+      //   .addEventListener("click", () => {
+      //     newPostContainer.style.display = "none";
+      //   });
+
+      // document
+      //   .querySelector(".add-container .btn-add-discussion")
+      //   .addEventListener("click", () => {
+      //     newDiscussionContainer.style.display = "block";
+      //   });
+
+      // document
+      //   .querySelector(".discussion-post-container .btn-post-close")
+      //   .addEventListener("click", () => {
+      //     newDiscussionContainer.style.display = "none";
+      //   });
+
+      // document.querySelector(".btn-add").addEventListener("click", () => {
+      //   document.querySelector(".add-btn-container").classList.toggle("active");
+      // });
+    </script>
+
+    <footer class="footer-container"></footer>
+    <script src="./../js/header-script.js"></script>
+    <script src="./../js/loader-script.js"></script>
+    <script src="./../js/nav-script.js"></script>
+    <script src="./../js/footer-script.js"></script>
+
+    <script
+      src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.11.1/firebase-database.js"
+      type="module"
+    ></script>
+
+    <script src="./../js/login-checker-script.js" type="module"></script>
+    <script src="./../js/Community-Script.js" type="module" defer></script>
+  </body>
+</html>

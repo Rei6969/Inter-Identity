@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>interIdentity</title>
+    <link rel="icon" href="./../media/images/logo2.png" type="image/png" />
+    <link rel="stylesheet" href="./../css/root-style.css" />
+    <link rel="stylesheet" href="./../css/loader-style.css" />
+    <link rel="stylesheet" href="./../css/header-style.css" />
+    <link rel="stylesheet" href="./../css/footer-style.css" />
+
+    <link rel="stylesheet" href="./../css/profile-style.css" />
+  </head>
+  <body>
+    <div class="loader"></div>
+
+    <header id="header-container"></header>
+
+    <main>
+      <div class="main-container">
+        <div class="left-main-container" style="display: none">
+          <a href="#" class="btn-personal">Personal</a>
+          <a href="#" class="btn-logout">Logout</a>
+        </div>
+        <div class="right-main-container">
+          <h1>PERSONAL DETAILS</h1>
+          <div class="container-1">
+            <div class="container-2">
+              <img
+                src="./../media/images/default-profile.png"
+                alt="profile-img"
+                class="personal-img"
+              />
+              <input type="file" class="img-input" style="display: none" />
+              <button class="btn-change-profile">Change Picture</button>
+            </div>
+            <div class="container-3">
+              <h3 id="header-name">First name Last name</h3>
+              <h3 id="header-email">email@gmail.com</h3>
+            </div>
+          </div>
+          <div class="form">
+            <div style="display: flex; width: 100%">
+              <div class="form-group">
+                <label class="form-label">First Name</label>
+                <input
+                  type="text"
+                  placeholder="First Name"
+                  style="flex: 1; margin-right: 10px"
+                  id="fName"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Last Name</label>
+                <input
+                  type="text"
+                  placeholder="Last Name"
+                  style="flex: 1"
+                  id="lName"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Email</label>
+              <input
+                type="email"
+                placeholder="Email"
+                style="flex: 1"
+                id="email"
+              />
+              <!-- <button class="btn-change-email">Change Email</button> -->
+            </div>
+            <div style="display: flex; width: 100%">
+              <div class="form-group">
+                <label class="form-label">Old Password</label>
+                <input
+                  type="password"
+                  placeholder="Current Password"
+                  style="flex: 1; margin-right: 10px"
+                  id="currentPWord"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label">New Password</label>
+                <input
+                  type="password"
+                  placeholder="New Password"
+                  style="flex: 1"
+                  id="newPWord"
+                />
+              </div>
+            </div>
+            <div style="display: flex; width: 100%">
+              <div class="form-group">
+                <label class="form-label">Age</label>
+                <input
+                  type="number"
+                  placeholder="Age"
+                  style="flex: 1; margin-right: 10px"
+                  min="0"
+                  id="age"
+                />
+              </div>
+              <div class="form-group">
+                <label class="form-label">Gender</label>
+                <input
+                  type="text"
+                  placeholder="Gender"
+                  style="flex: 1"
+                  id="gender"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Province</label>
+              <input
+                type="text"
+                placeholder="Province"
+                style="flex: 1"
+                id="province"
+              />
+            </div>
+            <div class="form-group">
+              <label class="form-label">Contact No.</label>
+              <input
+                type="text"
+                placeholder="Contact No."
+                style="flex: 1"
+                id="contact"
+              />
+            </div>
+          </div>
+          <button class="btn-change">Save Changes</button>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer-container"></footer>
+
+    <!-- <script>
+      const btnProfileNav = document.querySelector(".menu-nav .btn-profile");
+      btnProfileNav.style.background = "rgba(0, 0, 0, 0.5)";
+      btnProfileNav.style.color = "white";
+    </script> -->
+    <script src="./../js/loader-script.js"></script>
+    <script src="./../js/nav-script.js"></script>
+    <script src="./../js/header-script.js"></script>
+    <script src="./../js/footer-script.js"></script>
+
+    <script
+      src="https://www.gstatic.com/firebasejs/10.11.1/firebase-app.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js"
+      type="module"
+    ></script>
+    <script
+      src="https://www.gstatic.com/firebasejs/10.11.1/firebase-database.js"
+      type="module"
+    ></script>
+
+    <script src="./../js/login-checker-script.js" type="module"></script>
+
+    <script type="module" src="./../js/profile-script.js" defer></script>
+  </body>
+</html>
